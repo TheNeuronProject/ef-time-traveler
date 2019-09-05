@@ -90,7 +90,6 @@ registerProps(TimeTraveler, {
 		set(val) {
 			if (val >= this.$data.historyCount) return
 			this.$data.historyCount = val
-			console.log(val)
 		}
 	}
 })

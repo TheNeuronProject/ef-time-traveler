@@ -1,6 +1,6 @@
 {
   "name": "ef-time-traveler",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A time traveler written for ef, written with ef",
   "repository": "https://github.com/TheNeuronProject/ef-time-traveler",
   "main": "dist/time-traveler.min.js",
