@@ -1,9 +1,10 @@
 {
   "name": "ef-time-traveler",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A time traveler written for ef, written with ef",
   "repository": "https://github.com/TheNeuronProject/ef-time-traveler",
-  "main": "src/main.js",
+  "main": "dist/time-traveler.min.js",
+  "module": "src/time-traveler.js",
   "scripts": {
     "start": "rollup -c ./config/rollup.dev.js -w",
     "build": "rollup -c ./config/rollup.prod.js",
