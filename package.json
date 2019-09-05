@@ -1,0 +1,48 @@
+{
+  "name": "ef-time-traveler",
+  "version": "1.0.0",
+  "description": "A time traveler written for ef, written with ef",
+  "repository": "https://github.com/TheNeuronProject/ef-time-traveler",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "rollup -c ./config/rollup.dev.js -w",
+    "build": "rollup -c ./config/rollup.prod.js",
+    "prod": "cross-env NODE_ENV=production rollup -c ./config/rollup.prod.js",
+    "lint": "eslint --ext .js --ext .jsx src",
+    "clear": "del ./dist/** ./dev/**"
+  },
+  "author": "ClassicOldSong",
+  "license": "MIT",
+  "devDependencies": {
+    "camelcase": "^5.3.1",
+    "chalk": "^2.4.2",
+    "chokidar": "^3.0.2",
+    "cross-env": "^5.2.1",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
+    "del-cli": "^2.0.0",
+    "eslint": "^6.3.0",
+    "eslint-plugin-react": "^7.14.3",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-modules": "^1.4.1",
+    "postcss-nested": "^4.1.2",
+    "postcss-simple-vars": "^5.0.2",
+    "rollup": "^1.20.3",
+    "rollup-plugin-buble": "^0.19.8",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-copy-glob": "^0.3.1",
+    "rollup-plugin-eft": "^0.3.0",
+    "rollup-plugin-eslint": "^7.0.0",
+    "rollup-plugin-inject": "^3.0.1",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-live-server": "^1.0.3",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-progress": "^1.1.1",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-uglify": "^6.0.3"
+  },
+  "peerDependencies": {
+    "ef-core": "^0.9.7"
+  }
+}

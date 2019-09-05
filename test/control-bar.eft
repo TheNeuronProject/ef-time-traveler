@@ -1,0 +1,44 @@
+>div
+	>label
+		.Time Travel
+	>input
+		#type = range
+		#min = 0
+		#max = {{rangeMax = 0}}
+		%value = {{currentPos = 0}}
+		@input = updateTraveler1:{{currentPos}}
+>div
+	.History count: {{rangeMax}}
+>div
+	.Current Pos: {{currentPos}}
+>div
+	>label
+		.Time Travel of Time Travel
+	>input
+		#type = range
+		#min = 0
+		#max = {{rangeMax2 = 0}}
+		%value = {{currentPos2 = 0}}
+		@input = updateTraveler2:{{currentPos2}}
+>div
+	>label
+		.Reset to
+	>input
+		#type = number
+		%value = {{resetTo = 0}}
+	>button
+		.Reset
+		@click = resetTo:{{resetTo}}
+>div
+	>label
+		.Revert
+	>input
+		#type = number
+		%value = {{revert = 0}}
+	>button
+		.Revert
+		@click = revert:{{revert}}
+>div
+	.History count: {{rangeMax2}}
+>div
+	.Current Pos: {{currentPos2}}

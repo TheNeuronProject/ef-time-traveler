@@ -1,0 +1,31 @@
+>div
+	>label
+		.Input value1 here
+	>input
+		%value = {{inputVal1}}
+>div
+	>label
+		.Input value2 here
+	>input
+		#type = checkbox
+		%checked = {{inputVal2}}
+>div
+	>label
+		.Input value3 here
+	>select
+		%value = {{inputVal3 = a}}
+		>option
+			#value = a
+			.a
+		>option
+			#value = b
+			.b
+		>option
+			#value = c
+			.c
+		>option
+			#value = d
+			.d
+		>option
+			#value = e
+			.e
